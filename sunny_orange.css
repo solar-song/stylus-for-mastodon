@@ -1,0 +1,149 @@
+/* =========================================================
+   Mastodon "Sunny Orange" Custom Theme for Stylus
+   Vibe: Warm, energetic, high contrast, clean typography
+   ========================================================= */
+
+:root {
+  /* Main Backgrounds & Canvas */
+  --theme-color: #ffb703 !important;
+  --background-color: #fff8f0 !important;
+  --background-border-color: #f7d0a1 !important;
+  --surface-background-color: #ffffff !important;
+
+  /* Text & Typography Colors */
+  --primary-text-color: #3d2612 !important;
+  --secondary-text-color: #7c5c3e !important;
+  --highlight-text-color: #e65100 !important;
+
+  /* Action Buttons & Accent Elements */
+  --active-nav-item-color: #fb8500 !important;
+  --button-background-color: #fb8500 !important;
+  --button-hover-background-color: #d97706 !important;
+}
+
+/* Base App Layout Canvas */
+body, 
+.app-holder, 
+.ui, 
+.column, 
+.columns-area, 
+.scrollable {
+  background-color: #fff8f0 !important;
+  color: #3d2612 !important;
+}
+
+/* Individual Post / Status Cards */
+.status, 
+.focusable:focus, 
+.detailed-status, 
+.detailed-status__action-bar, 
+.account__header__bar {
+  background-color: #ffffff !important;
+  border-color: #ffe0b2 !important;
+}
+
+/* Column Headers & Navigation Top Bars */
+.column-header, 
+.column-header__button, 
+.column-header__collapsible-inner, 
+.tabs-bar {
+  background-color: #ffe3c2 !important;
+  color: #2e1a08 !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #ffb703 !important;
+}
+
+.column-header__title, 
+.column-header__title .column-header__back-button {
+  color: #2e1a08 !important;
+}
+
+/* Post Content & Text Override */
+.status__content, 
+.status__content p, 
+.reply-indicator__content {
+  color: #3d2612 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+}
+
+/* Links & Hashtags */
+.status__content a, 
+.status__content a.unhandled-link, 
+.hashtag {
+  color: #d97706 !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.status__content a:hover, 
+.hashtag:hover {
+  text-decoration: underline !important;
+  color: #b45309 !important;
+}
+
+/* Compose / Post Editor Area */
+.compose-form, 
+.compose-form .autosuggest-textarea__textarea {
+  background-color: #ffffff !important;
+  color: #3d2612 !important;
+  border-radius: 8px !important;
+}
+
+.compose-form .autosuggest-textarea__textarea {
+  border: 1px solid #ffd1a4 !important;
+}
+
+.compose-form .autosuggest-textarea__textarea:focus {
+  border-color: #fb8500 !important;
+  box-shadow: 0 0 0 2px rgba(251, 133, 0, 0.2) !important;
+}
+
+/* Action Buttons (Publish / Toot) */
+.button, 
+.button.vulnerable {
+  background-color: #fb8500 !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  border-radius: 20px !important;
+  transition: background-color 0.15s ease-in-out !important;
+}
+
+.button:hover, 
+.button:active {
+  background-color: #d97706 !important;
+}
+
+/* Interaction Icons (Reply, Boost, Favorite) */
+.status__action-bar__button {
+  color: #8c6d50 !important;
+}
+
+.status__action-bar__button:hover {
+  color: #fb8500 !important;
+}
+
+.status__action-bar__button.active {
+  color: #ffb703 !important;
+}
+
+.status__action-bar__button.favourite.active {
+  color: #ffb703 !important;
+}
+
+/* Sidebar & Navigation Selection */
+.column-link {
+  color: #5c4028 !important;
+  border-radius: 6px !important;
+}
+
+.column-link:hover {
+  background-color: #ffe8d1 !important;
+  color: #fb8500 !important;
+}
+
+.column-link.active {
+  background-color: #ffe0b2 !important;
+  color: #d97706 !important;
+  font-weight: bold !important;
+}
