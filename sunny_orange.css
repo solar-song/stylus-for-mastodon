@@ -147,3 +147,100 @@ body,
   color: #d97706 !important;
   font-weight: bold !important;
 }
+
+
+
+/* =========================================================
+   MASTODON FIX: Remove White Blank Blocks & Card Panels
+   ========================================================= */
+
+/* 1. Feed Container & Scroll Wrapper Overrides */
+.feed-scrollable,
+.item-list,
+.item-list__single-topic,
+.column-inline-form,
+.getting-started__wrapper,
+.getting-started {
+  background-color: #fff8f0 !important;
+}
+
+/* 2. Compose Panel & Text Input Area (Fixes Screenshot 1) */
+.compose-form .autosuggest-textarea__textarea,
+.compose-form .compose-form__modifiers,
+.compose-form .compose-form__buttons-wrapper,
+.reply-indicator {
+  background-color: #ffe3c2 !important;
+  border-color: #f7d0a1 !important;
+}
+
+.compose-form .autosuggest-textarea__textarea {
+  background-color: #ffffff !important;
+}
+
+/* 3. Post Feed Cards, Statuses & Boost Blocks (Fixes Screenshot 2) */
+.status,
+.status__content,
+.status__content__text,
+.status__wrapper,
+.focusable,
+.focusable:focus,
+.detailed-status,
+.detailed-status__action-bar,
+.account__header__bar,
+.activity-stream {
+  background-color: #fff8f0 !important;
+}
+
+/* 4. Embedded Link Previews / News Cards */
+.status-card,
+.status-card__title,
+.status-card__content,
+.status-card.horizontal,
+.status-card.compact {
+  background-color: #ffffff !important;
+  border: 1px solid #ffe0b2 !important;
+  border-radius: 8px !important;
+}
+
+.status-card:hover {
+  background-color: #fff3e0 !important;
+  border-color: #fb8500 !important;
+}
+
+/* 5. Spoiler / Content Warning (CW) Folders & Polls */
+.status__content .status__content__spoiler-link,
+.poll__option__example,
+.poll__option {
+  background-color: #ffe3c2 !important;
+  color: #3d2612 !important;
+}
+
+
+/* =========================================================
+   MASTODON FIX: Compose Form Outer Container & Fill
+   ========================================================= */
+
+/* Force the form element itself to match the background */
+form.compose-form,
+.compose-form {
+  background: #fff8f0 !important;
+  background-color: #fff8f0 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Ensure any flex-fill wrapper inside the form doesn't revert to white */
+form.compose-form > div,
+.compose-form__wrapper {
+  background: #fff8f0 !important;
+  background-color: #fff8f0 !important;
+}
+
+/* Keep ONLY the actual text input area white for comfortable typing */
+.compose-form textarea,
+.autosuggest-textarea__textarea,
+.autosuggest-textarea_form_input textarea {
+  background-color: #ffffff !important;
+  border: 1px solid #ffd1a4 !important;
+  border-radius: 8px !important;
+}
