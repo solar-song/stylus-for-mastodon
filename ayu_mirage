@@ -1,0 +1,248 @@
+/* =========================================================
+   Mastodon "Ayu Mirage Vibe" Custom Theme Mysterious Dark
+   Vibe: Deep violet canvas, glowing neon accents, low eye strain
+   ========================================================= */
+
+:root {
+  /* Main Backgrounds & Canvas */
+  --theme-color: #ae81ff !important;
+  --background-color: #1f2430 !important;
+  --background-border-color: #2d3345 !important;
+  --surface-background-color: #191e2a !important;
+
+  /* Text & Typography Colors */
+  --primary-text-color: #cbccc6 !important;
+  --secondary-text-color: #707a8a !important;
+  --highlight-text-color: #ffae57 !important;
+
+  /* Action Buttons & Accent Elements */
+  --active-nav-item-color: #ae81ff !important;
+  --button-background-color: #ae81ff !important;
+  --button-hover-background-color: #9350ff !important;
+}
+
+/* Base App Layout Canvas */
+body, 
+.app-holder, 
+.ui, 
+.column, 
+.columns-area, 
+.scrollable {
+  background-color: #1f2430 !important;
+  color: #cbccc6 !important;
+}
+
+/* Individual Post / Status Cards */
+.status, 
+.focusable:focus, 
+.detailed-status, 
+.detailed-status__action-bar, 
+.account__header__bar {
+  background-color: #191e2a !important;
+  border-color: #2d3345 !important;
+}
+
+/* Column Headers & Navigation Top Bars */
+.column-header, 
+.column-header__button, 
+.column-header__collapsible-inner, 
+.tabs-bar {
+  background-color: #191e2a !important;
+  color: #d4bfff !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #ae81ff !important;
+}
+
+.column-header__title, 
+.column-header__title .column-header__back-button {
+  color: #d4bfff !important;
+}
+
+/* Post Content & Text Override */
+.status__content, 
+.status__content p, 
+.reply-indicator__content {
+  color: #cbccc6 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+}
+
+/* Links & Hashtags */
+.status__content a, 
+.status__content a.unhandled-link, 
+.hashtag {
+  color: #5ccfe6 !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.status__content a:hover, 
+.hashtag:hover {
+  text-decoration: underline !important;
+  color: #74dde8 !important;
+}
+
+/* Compose / Post Editor Area */
+.compose-form, 
+.compose-form .autosuggest-textarea__textarea {
+  background-color: #191e2a !important;
+  color: #cbccc6 !important;
+  border-radius: 8px !important;
+}
+
+.compose-form .autosuggest-textarea__textarea {
+  border: 1px solid #2d3345 !important;
+}
+
+.compose-form .autosuggest-textarea__textarea:focus {
+  border-color: #ae81ff !important;
+  box-shadow: 0 0 0 2px rgba(174, 129, 255, 0.25) !important;
+}
+
+/* Action Buttons (Publish / Toot) */
+.button, 
+.button.vulnerable {
+  background-color: #ae81ff !important;
+  color: #191e2a !important;
+  font-weight: bold !important;
+  border-radius: 20px !important;
+  transition: background-color 0.15s ease-in-out !important;
+}
+
+.button:hover, 
+.button:active {
+  background-color: #ffae57 !important;
+  color: #191e2a !important;
+}
+
+/* Interaction Icons (Reply, Boost, Favorite) */
+.status__action-bar__button {
+  color: #707a8a !important;
+}
+
+.status__action-bar__button:hover {
+  color: #5ccfe6 !important;
+}
+
+.status__action-bar__button.active {
+  color: #ffae57 !important;
+}
+
+.status__action-bar__button.favourite.active {
+  color: #ffe699 !important;
+}
+
+/* Sidebar & Navigation Selection */
+.column-link {
+  color: #707a8a !important;
+  border-radius: 6px !important;
+}
+
+.column-link:hover {
+  background-color: #232834 !important;
+  color: #5ccfe6 !important;
+}
+
+.column-link.active {
+  background-color: #2d3345 !important;
+  color: #ae81ff !important;
+  font-weight: bold !important;
+}
+
+
+/* =========================================================
+   MASTODON FIX: Remove White Blank Blocks & Card Panels
+   ========================================================= */
+
+/* 1. Feed Container & Scroll Wrapper Overrides */
+.feed-scrollable,
+.item-list,
+.item-list__single-topic,
+.column-inline-form,
+.getting-started__wrapper,
+.getting-started {
+  background-color: #1f2430 !important;
+}
+
+/* 2. Compose Panel & Text Input Area */
+.compose-form .autosuggest-textarea__textarea,
+.compose-form .compose-form__modifiers,
+.compose-form .compose-form__buttons-wrapper,
+.reply-indicator {
+  background-color: #191e2a !important;
+  border-color: #2d3345 !important;
+}
+
+.compose-form .autosuggest-textarea__textarea {
+  background-color: #141824 !important;
+}
+
+/* 3. Post Feed Cards, Statuses & Boost Blocks */
+.status,
+.status__content,
+.status__content__text,
+.status__wrapper,
+.focusable,
+.focusable:focus,
+.detailed-status,
+.detailed-status__action-bar,
+.account__header__bar,
+.activity-stream {
+  background-color: #1f2430 !important;
+}
+
+/* 4. Embedded Link Previews / News Cards */
+.status-card,
+.status-card__title,
+.status-card__content,
+.status-card.horizontal,
+.status-card.compact {
+  background-color: #191e2a !important;
+  border: 1px solid #2d3345 !important;
+  border-radius: 8px !important;
+  color: #cbccc6 !important;
+}
+
+.status-card:hover {
+  background-color: #232834 !important;
+  border-color: #ae81ff !important;
+}
+
+/* 5. Spoiler / Content Warning (CW) Folders & Polls */
+.status__content .status__content__spoiler-link,
+.poll__option__example,
+.poll__option {
+  background-color: #232834 !important;
+  color: #ae81ff !important;
+}
+
+
+/* =========================================================
+   MASTODON FIX: Compose Form Outer Container & Fill
+   ========================================================= */
+
+/* Force the form element itself to match the background */
+form.compose-form,
+.compose-form {
+  background: #1f2430 !important;
+  background-color: #1f2430 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Ensure any flex-fill wrapper inside the form doesn't revert to white */
+form.compose-form > div,
+.compose-form__wrapper {
+  background: #1f2430 !important;
+  background-color: #1f2430 !important;
+}
+
+/* Keep the actual text input area dark and readable */
+.compose-form textarea,
+.autosuggest-textarea__textarea,
+.autosuggest-textarea_form_input textarea {
+  background-color: #141824 !important;
+  color: #cbccc6 !important;
+  border: 1px solid #2d3345 !important;
+  border-radius: 8px !important;
+}
